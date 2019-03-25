@@ -5,9 +5,21 @@
     "config": {
         "sort-packages": true
     },
+    "guzzle": {
+      "type": "package",
+      "package": {
+        "name": "K3S/guzzle",
+        "version": "6.0",
+        "source": {
+          "url": "git@github.com:K3S/guzzle.git",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    },
     "require": {
         "php": "^5.6|^7.0",
-        "guzzlehttp/guzzle": "^6.0",
+        "K3S/guzzle": "*",
         "paragonie/random_compat": "^1|^2|^9.99"
     },
     "require-dev": {
